@@ -20,8 +20,18 @@ class AboutUsVC: UIViewController {
             tappedButtons()
     }
 
-    private func tappedButtons() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
     }
     
+    private func tappedButtons() {
+        contentView.btnBack.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+    }
+    
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
   
 }

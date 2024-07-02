@@ -5,7 +5,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Aclonica-Regular.ttf</string>
-		<string>Archivo_Condensed-Regular.ttf</string>
+		<string>Archivo-Regular.ttf</string>
+		<string>Archivo-Thin.ttf</string>
+		<string>Archivo-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

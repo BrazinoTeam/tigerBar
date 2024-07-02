@@ -27,11 +27,16 @@
 		18CBD6E32C341E5C00A430D8 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6E22C341E5B00A430D8 /* ContactsVC.swift */; };
 		18CBD6E52C341E5F00A430D8 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6E42C341E5F00A430D8 /* ContactsView.swift */; };
 		18CBD6E92C341E8400A430D8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6E82C341E8400A430D8 /* Settings.swift */; };
-		18CBD6EC2C341F8800A430D8 /* Archivo_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6EB2C341F8800A430D8 /* Archivo_Condensed-Regular.ttf */; };
 		18CBD6EE2C341F9700A430D8 /* Aclonica-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6ED2C341F9700A430D8 /* Aclonica-Regular.ttf */; };
 		18CBD6F02C341FC600A430D8 /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6EF2C341FC600A430D8 /* Font + Extension.swift */; };
 		18CBD6F22C341FD900A430D8 /* UserMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6F12C341FD900A430D8 /* UserMemory.swift */; };
 		18CBD6F52C341FF100A430D8 /* Double + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6F42C341FF100A430D8 /* Double + Extension.swift */; };
+		18CBD6FB2C343B7200A430D8 /* Archivo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6FA2C343B7200A430D8 /* Archivo-Thin.ttf */; };
+		18CBD6FD2C343B7C00A430D8 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6FC2C343B7C00A430D8 /* Archivo-Regular.ttf */; };
+		18CBD6FF2C34416000A430D8 /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6FE2C34416000A430D8 /* Archivo-Bold.ttf */; };
+		18CBD7012C34469E00A430D8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7002C34469E00A430D8 /* GradientView.swift */; };
+		18CBD7032C34470300A430D8 /* Extesion Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7022C34470300A430D8 /* Extesion Gradient.swift */; };
+		18CBD7052C34516000A430D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7042C34516000A430D8 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +61,16 @@
 		18CBD6E22C341E5B00A430D8 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		18CBD6E42C341E5F00A430D8 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		18CBD6E82C341E8400A430D8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		18CBD6EB2C341F8800A430D8 /* Archivo_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		18CBD6ED2C341F9700A430D8 /* Aclonica-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aclonica-Regular.ttf"; sourceTree = "<group>"; };
 		18CBD6EF2C341FC600A430D8 /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
 		18CBD6F12C341FD900A430D8 /* UserMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMemory.swift; sourceTree = "<group>"; };
 		18CBD6F42C341FF100A430D8 /* Double + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Extension.swift"; sourceTree = "<group>"; };
+		18CBD6FA2C343B7200A430D8 /* Archivo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Thin.ttf"; sourceTree = "<group>"; };
+		18CBD6FC2C343B7C00A430D8 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Regular.ttf"; sourceTree = "<group>"; };
+		18CBD6FE2C34416000A430D8 /* Archivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Bold.ttf"; sourceTree = "<group>"; };
+		18CBD7002C34469E00A430D8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		18CBD7022C34470300A430D8 /* Extesion Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesion Gradient.swift"; sourceTree = "<group>"; };
+		18CBD7042C34516000A430D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 			children = (
 				18CBD6DA2C341E4900A430D8 /* QRCodeVC.swift */,
 				18CBD6DC2C341E4C00A430D8 /* QRCodeView.swift */,
+				18CBD7002C34469E00A430D8 /* GradientView.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 			children = (
 				18CBD6E22C341E5B00A430D8 /* ContactsVC.swift */,
 				18CBD6E42C341E5F00A430D8 /* ContactsView.swift */,
+				18CBD7042C34516000A430D8 /* WebViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -198,6 +210,7 @@
 				18CBD6EA2C341F1600A430D8 /* UIFont */,
 				18CBD6E72C341E7E00A430D8 /* Settings */,
 				18CBD6B02C341CFA00A430D8 /* Assets.xcassets */,
+				18CBD7022C34470300A430D8 /* Extesion Gradient.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -213,8 +226,10 @@
 		18CBD6EA2C341F1600A430D8 /* UIFont */ = {
 			isa = PBXGroup;
 			children = (
+				18CBD6FA2C343B7200A430D8 /* Archivo-Thin.ttf */,
+				18CBD6FC2C343B7C00A430D8 /* Archivo-Regular.ttf */,
+				18CBD6FE2C34416000A430D8 /* Archivo-Bold.ttf */,
 				18CBD6ED2C341F9700A430D8 /* Aclonica-Regular.ttf */,
-				18CBD6EB2C341F8800A430D8 /* Archivo_Condensed-Regular.ttf */,
 			);
 			path = UIFont;
 			sourceTree = "<group>";
@@ -283,10 +298,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CBD6FF2C34416000A430D8 /* Archivo-Bold.ttf in Resources */,
+				18CBD6FB2C343B7200A430D8 /* Archivo-Thin.ttf in Resources */,
 				18CBD6B12C341CFA00A430D8 /* Assets.xcassets in Resources */,
 				18CBD6EE2C341F9700A430D8 /* Aclonica-Regular.ttf in Resources */,
+				18CBD6FD2C343B7C00A430D8 /* Archivo-Regular.ttf in Resources */,
 				18CBD6B42C341CFA00A430D8 /* Base in Resources */,
-				18CBD6EC2C341F8800A430D8 /* Archivo_Condensed-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +325,10 @@
 				18CBD6D32C341E3200A430D8 /* ProfileVC.swift in Sources */,
 				18CBD6E12C341E5600A430D8 /* AboutUsView.swift in Sources */,
 				18CBD6F52C341FF100A430D8 /* Double + Extension.swift in Sources */,
+				18CBD7012C34469E00A430D8 /* GradientView.swift in Sources */,
 				18CBD6E52C341E5F00A430D8 /* ContactsView.swift in Sources */,
 				18CBD6A82C341CF800A430D8 /* AppDelegate.swift in Sources */,
+				18CBD7052C34516000A430D8 /* WebViewController.swift in Sources */,
 				18CBD6D92C341E4200A430D8 /* MenuView.swift in Sources */,
 				18CBD6D72C341E3E00A430D8 /* MenuVC.swift in Sources */,
 				18CBD6C92C341DC200A430D8 /* HomeView.swift in Sources */,
@@ -317,6 +336,7 @@
 				18CBD6DF2C341E5300A430D8 /* AboutUsVC.swift in Sources */,
 				18CBD6AA2C341CF800A430D8 /* SceneDelegate.swift in Sources */,
 				18CBD6E32C341E5C00A430D8 /* ContactsVC.swift in Sources */,
+				18CBD7032C34470300A430D8 /* Extesion Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
