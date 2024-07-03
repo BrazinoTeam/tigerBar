@@ -174,6 +174,7 @@ class AboutUsView: UIView {
         imgContainer.snp.makeConstraints { make in
             make.edges.equalTo(scrollView.contentLayoutGuide)
             make.width.equalTo(scrollView.frameLayoutGuide)
+            make.height.equalTo(628)
         }
         
         imgTitle.snp.makeConstraints { make in

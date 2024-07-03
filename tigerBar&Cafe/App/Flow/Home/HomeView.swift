@@ -92,7 +92,6 @@ class HomeView: UIView {
     }
     
     private func setupUI() {
-
         [bgImage, imgLogo, titleLabel, btnProfile, buttonStack] .forEach(addSubview(_:))
         [menuBtn, qrBtn, contactBtn, aboutBtn].forEach(buttonStack.addArrangedSubview(_:))
 

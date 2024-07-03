@@ -1,12 +1,14 @@
 import Foundation
 import UIKit
+import SafariServices
 
 class ContactsVC: UIViewController {
     
-    private var linkFacebook = "https://google.com.ua"
-    private var linkInsta = "https://youtube.com"
+    private var linkFacebook = "https://www.facebook.com/tigerbarjune"
+    private var linkInsta = "https://www.instagram.com/tigerbarjune"
+    private var callNumber = "(760) 648-7774"
+    private var sendEmail = "info@tigerbarandcafe.com"
 
-    
     private var contentView: ContactsView {
         view as? ContactsView ?? ContactsView()
     }
@@ -23,7 +25,8 @@ class ContactsVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
-
+        contentView.callLabel.text = "\(callNumber)"
+        contentView.messageLabel.text = "\(sendEmail)"
     }
     
     private func tappedButtons() {
@@ -45,8 +48,8 @@ class ContactsVC: UIViewController {
     }
     
     private func openWebView(with urlString: String) {
-        let webVC = WebViewController()
-        webVC.urlString = urlString
-        navigationController?.pushViewController(webVC, animated: true)
-    }
+           guard let url = URL(string: urlString) else { return }
+           let safariVC = SFSafariViewController(url: url)
+           present(safariVC, animated: true, completion: nil)
+       }
 }

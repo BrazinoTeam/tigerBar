@@ -34,7 +34,6 @@ class OnboardingVC: UIViewController {
                     let navigationController = UINavigationController(rootViewController: vc)
                     navigationController.modalPresentationStyle = .fullScreen
                     present(navigationController, animated: true)
-            
         }
     
 }

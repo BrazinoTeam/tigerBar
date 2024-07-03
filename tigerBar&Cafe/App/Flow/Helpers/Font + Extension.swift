@@ -10,6 +10,7 @@ extension UIFont {
     enum CustomFonts: String {
         case aclonica = "Aclonica"
         case archivo = "Archivo"
+        case inter = "Inter"
     }
     
     enum CustomFontStyle: String {
@@ -79,7 +80,7 @@ extension UIButton {
     }
 }
 
-extension UIImageView {
+extension UIButton {
     func saveImageToLocal(image: UIImage, userID: String) {
         if let data = image.jpegData(compressionQuality: 1.0) {
             let fileURL = getDocumentsDirectory().appendingPathComponent("\(userID).png")

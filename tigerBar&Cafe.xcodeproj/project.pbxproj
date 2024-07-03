@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184671DC2C356384005719D6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184671DB2C356384005719D6 /* MenuCell.swift */; };
+		184671DE2C3578F7005719D6 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184671DD2C3578F7005719D6 /* Inter-Regular.ttf */; };
 		18CBD6A82C341CF800A430D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6A72C341CF800A430D8 /* AppDelegate.swift */; };
 		18CBD6AA2C341CF800A430D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6A92C341CF800A430D8 /* SceneDelegate.swift */; };
 		18CBD6B12C341CFA00A430D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CBD6B02C341CFA00A430D8 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184671DB2C356384005719D6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		184671DD2C3578F7005719D6 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		18CBD6A42C341CF800A430D8 /* tigerBar&Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tigerBar&Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CBD6A72C341CF800A430D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CBD6A92C341CF800A430D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			children = (
 				18CBD6D62C341E3E00A430D8 /* MenuVC.swift */,
 				18CBD6D82C341E4200A430D8 /* MenuView.swift */,
+				184671DB2C356384005719D6 /* MenuCell.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		18CBD6EA2C341F1600A430D8 /* UIFont */ = {
 			isa = PBXGroup;
 			children = (
+				184671DD2C3578F7005719D6 /* Inter-Regular.ttf */,
 				18CBD6FA2C343B7200A430D8 /* Archivo-Thin.ttf */,
 				18CBD6FC2C343B7C00A430D8 /* Archivo-Regular.ttf */,
 				18CBD6FE2C34416000A430D8 /* Archivo-Bold.ttf */,
@@ -304,6 +310,7 @@
 				18CBD6EE2C341F9700A430D8 /* Aclonica-Regular.ttf in Resources */,
 				18CBD6FD2C343B7C00A430D8 /* Archivo-Regular.ttf in Resources */,
 				18CBD6B42C341CFA00A430D8 /* Base in Resources */,
+				184671DE2C3578F7005719D6 /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +335,7 @@
 				18CBD7012C34469E00A430D8 /* GradientView.swift in Sources */,
 				18CBD6E52C341E5F00A430D8 /* ContactsView.swift in Sources */,
 				18CBD6A82C341CF800A430D8 /* AppDelegate.swift in Sources */,
+				184671DC2C356384005719D6 /* MenuCell.swift in Sources */,
 				18CBD7052C34516000A430D8 /* WebViewController.swift in Sources */,
 				18CBD6D92C341E4200A430D8 /* MenuView.swift in Sources */,
 				18CBD6D72C341E3E00A430D8 /* MenuVC.swift in Sources */,
