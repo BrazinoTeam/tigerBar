@@ -17,8 +17,8 @@ struct OnboardingScreen: View {
             ProgressBarView(currentProgress: loadingProgress, maxProgress: 296)
         }
         .padding(.bottom, 40)
-        .frame(maxHeight: .infinity, alignment: .bottom)
-        .backgroundImage(image: .bgStart)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .backgroundImage(image: .bgLoad)
         .onChange(of: loadignViewModel.isAnimating) { animating in
             if animating {
                 withAnimation(.linear(duration: 2)) {
