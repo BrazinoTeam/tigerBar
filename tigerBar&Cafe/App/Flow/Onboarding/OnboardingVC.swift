@@ -33,13 +33,13 @@ class OnboardingVC: UIViewController {
             self.loadHomeVC()
         }
     }
-
+    
     func loadHomeVC() {
-      
-                    let vc = HomeVC()
-                    let navigationController = UINavigationController(rootViewController: vc)
-                    navigationController.modalPresentationStyle = .fullScreen
-                    present(navigationController, animated: true)
-        }
+        
+        let vc = HomeVC()
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true)
+    }
     
 }
