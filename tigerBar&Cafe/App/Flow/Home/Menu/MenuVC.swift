@@ -9,6 +9,11 @@ struct MenuItem {
     let coints: String
 }
 
+struct MenuDrinks {
+    let title: String
+    let subtitle: String
+    let coints: String
+}
 
 class MenuVC: UIViewController {
     
@@ -26,17 +31,17 @@ class MenuVC: UIViewController {
        ]
     
     private var menuItemsMain: [MenuItem] = [
-           MenuItem(imageName: "appOne", title: "Cheeseburger", subtitle: "Juicy beef patty with cheese, lettuce, tomato, and pickles", coints: "350,000 ₫"),
-           MenuItem(imageName: "appTwo", title: "Fish and Chips", subtitle: "Crispy fried fish served with fries and tartar sauce", coints: "420,000 ₫"),
-           MenuItem(imageName: "appThree", title: "Grilled Chicken Salad", subtitle: "Mixed greens with grilled chicken, cherry tomatoes, and balsamic dressing", coints: "320,000 ₫"),
-           MenuItem(imageName: "appFour", title: "Spaghetti Bolognese", subtitle: "Classic spaghetti with a rich meat sauce and Parmesan cheese", coints: "380,000 ₫")
+           MenuItem(imageName: "mainOne", title: "Cheeseburger", subtitle: "Juicy beef patty with cheese, lettuce, tomato, and pickles", coints: "350,000 ₫"),
+           MenuItem(imageName: "mainTwo", title: "Fish and Chips", subtitle: "Crispy fried fish served with fries and tartar sauce", coints: "420,000 ₫"),
+           MenuItem(imageName: "mainThree", title: "Grilled Chicken Salad", subtitle: "Mixed greens with grilled chicken, cherry tomatoes, and balsamic dressing", coints: "320,000 ₫"),
+           MenuItem(imageName: "mainFour", title: "Spaghetti Bolognese", subtitle: "Classic spaghetti with a rich meat sauce and Parmesan cheese", coints: "380,000 ₫")
        ]
     
-    private var menuItemsDrinks: [MenuItem] = [
-           MenuItem(imageName: "appOne", title: "House Beer", subtitle: "Local craft beer on tap", coints: "140,000 ₫"),
-           MenuItem(imageName: "appTwo", title: "Margarita", subtitle: "Classic margarita with a salt rim and lime wedge", coints: "230,000 ₫"),
-           MenuItem(imageName: "appThree", title: "Iced Coffee", subtitle: "Vietnamese iced coffee with condensed milk", coints: "100,000 ₫"),
-           MenuItem(imageName: "appFour", title: "Fresh Juice", subtitle: "Freshly squeezed orange or apple juice", coints: "120,000 ₫")
+    private var menuItemsDrinks: [MenuDrinks] = [
+        MenuDrinks(title: "House Beer", subtitle: "Local craft beer on tap", coints: "140,000 ₫"),
+        MenuDrinks(title: "Margarita", subtitle: "Classic margarita with a salt rim\nand lime wedge", coints: "230,000 ₫"),
+        MenuDrinks(title: "Iced Coffee", subtitle: "Vietnamese iced coffee with condensed milk", coints: "100,000 ₫"),
+        MenuDrinks(title: "Fresh Juice", subtitle: "Freshly squeezed orange or apple juice", coints: "120,000 ₫")
        ]
     
     override func loadView() {
@@ -70,7 +75,7 @@ class MenuVC: UIViewController {
     
     private func setupInitialState() {
         setButtonAttributes(button: contentView.btnAppetizers, title: "Appetizers".uppercased(), font: UIFont(name: "Archivo-Regular", size: 16), color: .cYellow)
-        setButtonAttributes(button: contentView.btnMainCourses, title: "MainCourses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
+        setButtonAttributes(button: contentView.btnMainCourses, title: "Main Courses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
         setButtonAttributes(button: contentView.btnDrinks, title: "Drinks", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
         
         contentView.tableViewAppetizers.isHidden = false
@@ -95,7 +100,7 @@ class MenuVC: UIViewController {
         contentView.tableViewDrinks.isHidden = true
         
         setButtonAttributes(button: contentView.btnAppetizers, title: "Appetizers".uppercased(), font: UIFont(name: "Archivo-Regular", size: 16), color: .cYellow)
-        setButtonAttributes(button: contentView.btnMainCourses, title: "MainCourses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
+        setButtonAttributes(button: contentView.btnMainCourses, title: "Main Courses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
         setButtonAttributes(button: contentView.btnDrinks, title: "Drinks", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
     }
     
@@ -104,7 +109,7 @@ class MenuVC: UIViewController {
         contentView.tableViewMainCourses.isHidden = false
         contentView.tableViewDrinks.isHidden = true
         
-        setButtonAttributes(button: contentView.btnMainCourses, title: "MainCourses", font: UIFont.customFont(font: .archivo, style: .regular, size: 16), color: .cYellow)
+        setButtonAttributes(button: contentView.btnMainCourses, title: "Main Courses".uppercased(), font: UIFont.customFont(font: .archivo, style: .regular, size: 16), color: .cYellow)
         setButtonAttributes(button: contentView.btnAppetizers, title: "Appetizers", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
         setButtonAttributes(button: contentView.btnDrinks, title: "Drinks", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
     }
@@ -114,9 +119,9 @@ class MenuVC: UIViewController {
         contentView.tableViewMainCourses.isHidden = true
         contentView.tableViewDrinks.isHidden = false
         
-        setButtonAttributes(button: contentView.btnDrinks, title: "Drinks", font: UIFont(name: "Archivo-Regular", size: 16), color: .cYellow)
+        setButtonAttributes(button: contentView.btnDrinks, title: "Drinks".uppercased(), font: UIFont(name: "Archivo-Regular", size: 16), color: .cYellow)
         setButtonAttributes(button: contentView.btnAppetizers, title: "Appetizers", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
-        setButtonAttributes(button: contentView.btnMainCourses, title: "MainCourses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
+        setButtonAttributes(button: contentView.btnMainCourses, title: "Main Courses", font: UIFont.customFont(font: .archivo, style: .thin, size: 16), color: .clear)
     }
     
     private func setButtonAttributes(button: UIButton, title: String, font: UIFont?, color: UIColor) {
@@ -146,6 +151,8 @@ class MenuVC: UIViewController {
            
            let imgPosition = UIImageView(image: image)
            imgPosition.contentMode = .scaleAspectFit
+           imgPosition.layer.cornerRadius = 16
+           imgPosition.clipsToBounds = true
            imageView.addSubview(imgPosition)
            
            let titleLabel = UILabel()
@@ -255,41 +262,40 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MenuCell.reuseId, for: indexPath) as! MenuCell
-        
-        let menuItem: MenuItem
-        switch tableView.tag {
-        case 1:
-            menuItem = menuItemsAppe[indexPath.row]
-        case 2:
-            menuItem = menuItemsMain[indexPath.row]
-        case 3:
-            menuItem = menuItemsDrinks[indexPath.row]
-        default:
-            fatalError("Unexpected table view")
-        }
-        
-        cell.configure(with: menuItem)
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let menuItem: MenuItem
-        switch tableView.tag {
-        case 1:
-            menuItem = menuItemsAppe[indexPath.row]
-        case 2:
-            menuItem = menuItemsMain[indexPath.row]
-        case 3:
-            menuItem = menuItemsDrinks[indexPath.row]
-        default:
-            fatalError("Unexpected table view")
-        }
-        
-        if let image = UIImage(named: menuItem.imageName) {
-            presentAchivView(image: image, title: menuItem.title, subTitle: menuItem.subtitle, coint: menuItem.coints)
-        }
-    }
-}
+           let cell = tableView.dequeueReusableCell(withIdentifier: MenuCell.reuseId, for: indexPath) as! MenuCell
+           
+           switch tableView.tag {
+           case 1:
+               let menuItem = menuItemsAppe[indexPath.row]
+               cell.configure(with: menuItem)
+           case 2:
+               let menuItem = menuItemsMain[indexPath.row]
+               cell.configure(with: menuItem)
+           case 3:
+               let menuDrink = menuItemsDrinks[indexPath.row]
+               cell.configureForDrinks(with: menuDrink)
+           default:
+               fatalError("Unexpected table view")
+           }
+           
+           return cell
+       }
+       
+       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           let menuItem: MenuItem?
+           switch tableView.tag {
+           case 1:
+               menuItem = menuItemsAppe[indexPath.row]
+           case 2:
+               menuItem = menuItemsMain[indexPath.row]
+           case 3:
+               menuItem = nil
+           default:
+               fatalError("Unexpected table view")
+           }
+           if let menuItem = menuItem, let image = UIImage(named: menuItem.imageName) {
+               presentAchivView(image: image, title: menuItem.title, subTitle: menuItem.subtitle, coint: menuItem.coints)
+           }
 
+       }
+   }

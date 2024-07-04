@@ -1,11 +1,11 @@
 //
-//  ProfileView.swift
+//  ProfileViewScreen.swift
 
 import Foundation
 import UIKit
 import SnapKit
 
-class ProfileView: UIView , UITextFieldDelegate{
+class ProfileViewScreen: UIView , UITextFieldDelegate{
     
     
     private (set) var bgImage: UIImageView = {
@@ -111,12 +111,12 @@ class ProfileView: UIView , UITextFieldDelegate{
     }()
     
     private(set) var titleMoneyLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Total Money Spent", font: .customFont(font: .aclonica, style: .regular, size: 14), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
+        let label = UILabel.createLabel(withText: "Total Money Spent", font: .customFont(font: .aclonica, style: .regular, size: 11), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
         return label
     }()
     
     private(set) var subTitleMoneyLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "View the total amount of\nmoney you have spent\nat Tiger Bar and Cafe", font: .customFont(font: .archivo, style: .thin, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
+        let label = UILabel.createLabel(withText: "View the total amount of\nmoney you have spent\nat Tiger Bar and Cafe", font: .customFont(font: .archivo, style: .thin, size: 11), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -145,12 +145,12 @@ class ProfileView: UIView , UITextFieldDelegate{
     }()
     
     private(set) var titleDrinkLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Favorite Drink", font: .customFont(font: .aclonica, style: .regular, size: 14), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
+        let label = UILabel.createLabel(withText: "Favorite Drink", font: .customFont(font: .aclonica, style: .regular, size: 11), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
         return label
     }()
     
     private(set) var subTitleDrinkLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Discover which drink you\norder the most frequently", font: .customFont(font: .archivo, style: .thin, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
+        let label = UILabel.createLabel(withText: "Discover which drink you\norder the most frequently", font: .customFont(font: .archivo, style: .thin, size: 11), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -173,12 +173,12 @@ class ProfileView: UIView , UITextFieldDelegate{
     }()
     
     private(set) var titleVisitLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Total Visits", font: .customFont(font: .aclonica, style: .regular, size: 14), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
+        let label = UILabel.createLabel(withText: "Total Visits", font: .customFont(font: .aclonica, style: .regular, size: 11), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
         return label
     }()
     
     private(set) var subTitleVisitLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Track the total number\nof times you've\nvisited the cafe", font: .customFont(font: .archivo, style: .thin, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
+        let label = UILabel.createLabel(withText: "Track the total number\nof times you've\nvisited the cafe", font: .customFont(font: .archivo, style: .thin, size: 11), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -201,14 +201,14 @@ class ProfileView: UIView , UITextFieldDelegate{
     }()
     
     private(set) var titleOrderLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Average Order Value", font: .customFont(font: .aclonica, style: .regular, size: 14), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
+        let label = UILabel.createLabel(withText: "Average Order Value", font: .customFont(font: .aclonica, style: .regular, size: 11), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
     }()
     
     private(set) var subTitleOrderLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "See the average amount\nyou spend per order", font: .customFont(font: .archivo, style: .thin, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
+        let label = UILabel.createLabel(withText: "See the average amount\nyou spend per order", font: .customFont(font: .archivo, style: .thin, size: 11), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -237,12 +237,12 @@ class ProfileView: UIView , UITextFieldDelegate{
     }()
     
     private(set) var titleTotalLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Total Items Ordered", font: .customFont(font: .aclonica, style: .regular, size: 14), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
+        let label = UILabel.createLabel(withText: "Total Items Ordered", font: .customFont(font: .aclonica, style: .regular, size: 11), textColor: .cOrange, paragraphSpacing: 1, lineHeightMultiple: 0.88)
         return label
     }()
     
     private(set) var subTitleTotalLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "Count the total number of items you have ordered", font: .customFont(font: .archivo, style: .thin, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
+        let label = UILabel.createLabel(withText: "Count the total number of items you have ordered", font: .customFont(font: .archivo, style: .thin, size: 11), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.1)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -258,8 +258,6 @@ class ProfileView: UIView , UITextFieldDelegate{
         setupUI()
         setupConstraints()
         saveName()
-        adjustLabelsForScreenSize()
-        adjustConstraintsForScreenSize()
     }
     
     required init?(coder: NSCoder) {
@@ -351,8 +349,8 @@ class ProfileView: UIView , UITextFieldDelegate{
         imgMoneyCont.snp.makeConstraints { make in
             make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
             make.centerX.equalToSuperview().offset(-91.autoSize)
-            make.width.equalTo(180.autoSize)
-            make.height.equalTo(164.autoSize)
+            make.width.equalTo(160.autoSize)
+            make.height.equalTo(146.autoSize)
         }
         
         titleMoneyLabel.snp.makeConstraints { make in
@@ -378,8 +376,8 @@ class ProfileView: UIView , UITextFieldDelegate{
         imgDrinkCont.snp.makeConstraints { make in
             make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
             make.centerX.equalToSuperview().offset(91.autoSize)
-            make.width.equalTo(180.autoSize)
-            make.height.equalTo(164.autoSize)
+            make.width.equalTo(160.autoSize)
+            make.height.equalTo(146.autoSize)
         }
         
         titleDrinkLabel.snp.makeConstraints { make in
@@ -400,8 +398,8 @@ class ProfileView: UIView , UITextFieldDelegate{
         imgVisitCont.snp.makeConstraints { make in
             make.top.equalTo(imgMoneyCont.snp.bottom).offset(8.autoSize)
             make.centerX.equalToSuperview().offset(-91.autoSize)
-            make.width.equalTo(180.autoSize)
-            make.height.equalTo(164.autoSize)
+            make.width.equalTo(160.autoSize)
+            make.height.equalTo(146.autoSize)
         }
         
         titleVisitLabel.snp.makeConstraints { make in
@@ -422,8 +420,8 @@ class ProfileView: UIView , UITextFieldDelegate{
         imgOrderCont.snp.makeConstraints { make in
             make.top.equalTo(imgDrinkCont.snp.bottom).offset(8.autoSize)
             make.centerX.equalToSuperview().offset(91.autoSize)
-            make.width.equalTo(180.autoSize)
-            make.height.equalTo(164.autoSize)
+            make.width.equalTo(160.autoSize)
+            make.height.equalTo(146.autoSize)
         }
         
         titleOrderLabel.snp.makeConstraints { make in
@@ -449,7 +447,7 @@ class ProfileView: UIView , UITextFieldDelegate{
         imgTotalCont.snp.makeConstraints { make in
             make.top.equalTo(imgOrderCont.snp.bottom).offset(8.autoSize)
             make.centerX.equalToSuperview()
-            make.width.equalTo(365.autoSize)
+            make.width.equalTo(280.autoSize)
             make.height.equalTo(100.autoSize)
         }
         
@@ -483,116 +481,4 @@ class ProfileView: UIView , UITextFieldDelegate{
         textField.resignFirstResponder() // Закрытие клавиатуры
         return true
     }
-    
-    private func adjustLabelsForScreenSize() {
-           let screenHeight = UIScreen.main.bounds.height
-
-           if screenHeight < 812 {
-               titleMoneyLabel.font = .customFont(font: .aclonica, style: .regular, size: 11)
-               subTitleMoneyLabel.font = .customFont(font: .archivo, style: .thin, size: 11)
-
-               titleDrinkLabel.font = .customFont(font: .aclonica, style: .regular, size: 11)
-               subTitleDrinkLabel.font = .customFont(font: .archivo, style: .thin, size: 11)
-
-               titleVisitLabel.font = .customFont(font: .aclonica, style: .regular, size: 12)
-               subTitleVisitLabel.font = .customFont(font: .archivo, style: .thin, size: 12)
-
-               titleOrderLabel.font = .customFont(font: .aclonica, style: .regular, size: 12)
-               subTitleOrderLabel.font = .customFont(font: .archivo, style: .thin, size: 12)
-
-               titleTotalLabel.font = .customFont(font: .aclonica, style: .regular, size: 12)
-               subTitleTotalLabel.font = .customFont(font: .archivo, style: .thin, size: 12)
-           } else {
-               titleMoneyLabel.font = .customFont(font: .aclonica, style: .regular, size: 14)
-               subTitleMoneyLabel.font = .customFont(font: .archivo, style: .thin, size: 14)
-               
-               titleDrinkLabel.font = .customFont(font: .aclonica, style: .regular, size: 14)
-               subTitleDrinkLabel.font = .customFont(font: .archivo, style: .thin, size: 14)
-               
-               titleVisitLabel.font = .customFont(font: .aclonica, style: .regular, size: 14)
-               subTitleVisitLabel.font = .customFont(font: .archivo, style: .thin, size: 14)
-               
-               titleOrderLabel.font = .customFont(font: .aclonica, style: .regular, size: 14)
-               subTitleOrderLabel.font = .customFont(font: .archivo, style: .thin, size: 14)
-               
-               titleTotalLabel.font = .customFont(font: .aclonica, style: .regular, size: 14)
-               subTitleTotalLabel.font = .customFont(font: .archivo, style: .thin, size: 14)
-           }
-       }
-    
-    private func adjustConstraintsForScreenSize() {
-            let screenHeight = UIScreen.main.bounds.height
-
-            if screenHeight <= 812 {
-                imgMoneyCont.snp.remakeConstraints { make in
-                    make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
-                    make.centerX.equalToSuperview().offset(-91.autoSize)
-                    make.width.equalTo(160.autoSize)
-                    make.height.equalTo(148.autoSize)
-                }
-                
-                imgDrinkCont.snp.makeConstraints { make in
-                    make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
-                    make.centerX.equalToSuperview().offset(91.autoSize)
-                    make.width.equalTo(160.autoSize)
-                    make.height.equalTo(148.autoSize)
-                }
-                
-                imgVisitCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgMoneyCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview().offset(-91.autoSize)
-                    make.width.equalTo(160.autoSize)
-                    make.height.equalTo(148.autoSize)
-                }
-                
-                imgOrderCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgDrinkCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview().offset(91.autoSize)
-                    make.width.equalTo(160.autoSize)
-                    make.height.equalTo(148.autoSize)
-                }
-                
-                imgTotalCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgOrderCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview()
-                    make.width.equalTo(280.autoSize)
-                    make.height.equalTo(100.autoSize)
-                }
-            } else {
-                imgMoneyCont.snp.remakeConstraints { make in
-                    make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
-                    make.centerX.equalToSuperview().offset(-91.autoSize)
-                    make.width.equalTo(180.autoSize)
-                    make.height.equalTo(164.autoSize)
-                }
-                
-                imgDrinkCont.snp.makeConstraints { make in
-                    make.top.equalTo(analyticsLabel.snp.bottom).offset(16.autoSize)
-                    make.centerX.equalToSuperview().offset(91.autoSize)
-                    make.width.equalTo(180.autoSize)
-                    make.height.equalTo(164.autoSize)
-                }
-                
-                imgVisitCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgMoneyCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview().offset(-91.autoSize)
-                    make.width.equalTo(180.autoSize)
-                    make.height.equalTo(164.autoSize)
-                }
-                
-                imgOrderCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgDrinkCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview().offset(91.autoSize)
-                    make.width.equalTo(180.autoSize)
-                    make.height.equalTo(164.autoSize)
-                }
-                
-                imgTotalCont.snp.makeConstraints { make in
-                    make.top.equalTo(imgOrderCont.snp.bottom).offset(8.autoSize)
-                    make.centerX.equalToSuperview()
-                    make.width.equalTo(365.autoSize)
-                    make.height.equalTo(100.autoSize)
-                }
-            }
-        }
 }

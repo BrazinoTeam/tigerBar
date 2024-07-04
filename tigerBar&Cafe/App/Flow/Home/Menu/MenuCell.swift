@@ -1,9 +1,6 @@
-//
-//  MenuCell.swift
 import Foundation
 import UIKit
 import SnapKit
-
 
 class MenuCell: UITableViewCell {
     
@@ -17,6 +14,8 @@ class MenuCell: UITableViewCell {
     
     private(set) lazy var imgSelection: UIImageView = {
         let iv = UIImageView()
+        iv.layer.cornerRadius = 16
+        iv.clipsToBounds = true
         return iv
     }()
     
@@ -84,6 +83,14 @@ class MenuCell: UITableViewCell {
         titleLabel.text = menuItem.title
         subTitleLabel.text = menuItem.subtitle
         cointsLabel.text = menuItem.coints
+        setUpConstraints()
+    }
+    
+    func configureForDrinks(with menuDrink: MenuDrinks) {
+        titleLabel.text = menuDrink.title
+        subTitleLabel.text = menuDrink.subtitle
+        cointsLabel.text = menuDrink.coints
+        setUpConstDrinks()
     }
 
     private func setupUI() {
@@ -95,13 +102,12 @@ class MenuCell: UITableViewCell {
     }
     
     private func setUpConstraints(){
-        
         menuView.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(16)
             make.bottom.equalToSuperview()
             make.left.right.equalToSuperview().inset(20)
-            make.height.equalTo(96.autoSize)
-            make.width.equalTo(360.autoSize)
+            make.height.equalTo(96)
+            make.width.equalTo(360)
         }
 
         backImg.snp.makeConstraints { (make) in
@@ -136,6 +142,41 @@ class MenuCell: UITableViewCell {
             make.top.equalTo(imgCoints.snp.bottom)
             make.right.equalToSuperview().offset(-8)
         }
+    }
+
+    private func setUpConstDrinks() {
+        menuView.snp.remakeConstraints { (make) in
+            make.top.equalToSuperview().offset(16)
+            make.bottom.equalToSuperview()
+            make.left.right.equalToSuperview().inset(20)
+            make.height.equalTo(76)
+            make.width.equalTo(360)
+        }
         
+        backImg.snp.remakeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
+        titleLabel.snp.remakeConstraints { (make) in
+            make.top.equalToSuperview().offset(12)
+            make.left.equalToSuperview().offset(8)
+        }
+        
+        subTitleLabel.snp.remakeConstraints { (make) in
+            make.top.equalTo(titleLabel.snp.bottom).offset(4)
+            make.left.equalToSuperview().offset(8)
+            make.width.equalTo(232)
+        }
+        
+        imgCoints.snp.remakeConstraints { (make) in
+            make.centerY.equalToSuperview().offset(-12)
+            make.right.equalToSuperview().offset(-8)
+            make.size.equalTo(20)
+        }
+        
+        cointsLabel.snp.remakeConstraints { (make) in
+            make.top.equalTo(imgCoints.snp.bottom)
+            make.right.equalToSuperview().offset(-8)
+        }
     }
 }

@@ -11,7 +11,7 @@ class HomeView: UIView {
     private (set) var bgImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .bgHome
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         return imageView
     }()
 
@@ -104,8 +104,8 @@ class HomeView: UIView {
         }
 
         imgLogo.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(48)
-            make.left.equalToSuperview().offset(16)
+            make.top.equalToSuperview().offset(48.autoSize)
+            make.left.equalToSuperview().offset(16.autoSize)
             make.size.equalTo(48)
         }
         
@@ -115,14 +115,34 @@ class HomeView: UIView {
         }
         
         btnProfile.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(48)
-            make.right.equalToSuperview().offset(-16)
+            make.top.equalToSuperview().offset(48.autoSize)
+            make.right.equalToSuperview().offset(-16.autoSize)
             make.size.equalTo(48)
         }
         
         buttonStack.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(170)
+            make.centerY.equalToSuperview().offset(170.autoSize)
+        }
+        
+        menuBtn.snp.makeConstraints { make in
+            make.width.equalTo(312.autoSize)
+            make.height.equalTo(80.autoSize)
+        }
+        
+        qrBtn.snp.makeConstraints { make in
+            make.width.equalTo(312.autoSize)
+            make.height.equalTo(80.autoSize)
+        }
+        
+        aboutBtn.snp.makeConstraints { make in
+            make.width.equalTo(312.autoSize)
+            make.height.equalTo(80.autoSize)
+        }
+        
+        contactBtn.snp.makeConstraints { make in
+            make.width.equalTo(312.autoSize)
+            make.height.equalTo(80.autoSize)
         }
     }
 }

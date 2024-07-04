@@ -11,7 +11,7 @@ class MenuView: UIView {
     private (set) var bgImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .bgMenu
-        imageView.contentMode = .scaleAspectFill
+//        imageView.contentMode = .scaleToFsill
         return imageView
     }()
 
@@ -19,10 +19,6 @@ class MenuView: UIView {
         let btn = UIButton()
         btn.setBackgroundImage(.btnBack, for: .normal)
         btn.setBackgroundImage(.btnBackTapped, for: .highlighted)
-        btn.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
-        btn.layer.shadowOpacity = 1
-        btn.layer.shadowRadius = 8
-        btn.layer.shadowOffset = CGSize(width: 0, height: 8)
         return btn
     }()
     
@@ -41,7 +37,7 @@ class MenuView: UIView {
            let stackView = UIStackView()
            stackView.axis = .horizontal
            stackView.alignment = .center
-           stackView.spacing = 20
+           stackView.spacing = 16
            return stackView
        }()
     
@@ -115,13 +111,14 @@ class MenuView: UIView {
     
     private func setupConstraints() {
         
+
         bgImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
         btnBack.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(48)
-            make.left.equalToSuperview().offset(16)
+            make.top.equalToSuperview().offset(48.autoSize)
+            make.left.equalToSuperview().offset(16.autoSize)
             make.size.equalTo(48)
         }
         
@@ -131,24 +128,24 @@ class MenuView: UIView {
         }
         
         btnView.snp.makeConstraints { make in
-            make.top.equalTo(btnBack.snp.bottom).offset(16)
+            make.top.equalTo(btnBack.snp.bottom).offset(2)
             make.left.right.equalToSuperview()
             make.height.equalTo(52)
         }
         
         buttonStack.snp.makeConstraints { make in
-            make.top.equalTo(btnBack.snp.bottom).offset(16)
-            make.left.right.equalToSuperview().inset(16)
+            make.top.equalTo(btnBack.snp.bottom).offset(2)
+            make.left.right.equalToSuperview().inset(16.autoSize)
             make.height.equalTo(52)
         }
         
         btnAppetizers.snp.makeConstraints { make in
-            make.width.equalTo(124)
+            make.width.equalTo(120)
             make.height.equalTo(52)
         }
         
         btnMainCourses.snp.makeConstraints { make in
-            make.width.equalTo(118)
+            make.width.equalTo(132)
             make.height.equalTo(52)
         }
         

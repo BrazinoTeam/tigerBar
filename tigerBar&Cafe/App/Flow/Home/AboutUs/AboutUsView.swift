@@ -7,7 +7,7 @@ class AboutUsView: UIView {
     private(set) var bgImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .bgOther
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
 

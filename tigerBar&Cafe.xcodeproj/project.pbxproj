@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181172F52C36BFA1009A90A2 /* ProfileViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181172F42C36BFA0009A90A2 /* ProfileViewScreen.swift */; };
 		184671DC2C356384005719D6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184671DB2C356384005719D6 /* MenuCell.swift */; };
 		184671DE2C3578F7005719D6 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184671DD2C3578F7005719D6 /* Inter-Regular.ttf */; };
 		18CBD6A82C341CF800A430D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD6A72C341CF800A430D8 /* AppDelegate.swift */; };
@@ -39,9 +40,14 @@
 		18CBD7012C34469E00A430D8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7002C34469E00A430D8 /* GradientView.swift */; };
 		18CBD7032C34470300A430D8 /* Extesion Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7022C34470300A430D8 /* Extesion Gradient.swift */; };
 		18CBD7052C34516000A430D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBD7042C34516000A430D8 /* WebViewController.swift */; };
+		18D4A5FC2C367F43002BC13F /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4A5FB2C367F43002BC13F /* OnboardingScreen.swift */; };
+		18D4A6002C367F65002BC13F /* OnboardingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4A5FF2C367F65002BC13F /* OnboardingScreenViewModel.swift */; };
+		18D4A6022C367F6C002BC13F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4A6012C367F6C002BC13F /* ProgressBarView.swift */; };
+		18D4A6042C36815B002BC13F /* Extension + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4A6032C36815B002BC13F /* Extension + View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181172F42C36BFA0009A90A2 /* ProfileViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewScreen.swift; sourceTree = "<group>"; };
 		184671DB2C356384005719D6 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		184671DD2C3578F7005719D6 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		18CBD6A42C341CF800A430D8 /* tigerBar&Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tigerBar&Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +81,10 @@
 		18CBD7002C34469E00A430D8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		18CBD7022C34470300A430D8 /* Extesion Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesion Gradient.swift"; sourceTree = "<group>"; };
 		18CBD7042C34516000A430D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		18D4A5FB2C367F43002BC13F /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		18D4A5FF2C367F65002BC13F /* OnboardingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenViewModel.swift; sourceTree = "<group>"; };
+		18D4A6012C367F6C002BC13F /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		18D4A6032C36815B002BC13F /* Extension + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				18CBD6C12C341D8600A430D8 /* OnboardingVC.swift */,
+				18D4A5FB2C367F43002BC13F /* OnboardingScreen.swift */,
+				18D4A5FF2C367F65002BC13F /* OnboardingScreenViewModel.swift */,
+				18D4A6012C367F6C002BC13F /* ProgressBarView.swift */,
 				18CBD6C32C341D8A00A430D8 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
@@ -163,6 +176,7 @@
 			children = (
 				18CBD6D22C341E3200A430D8 /* ProfileVC.swift */,
 				18CBD6D42C341E3600A430D8 /* ProfileView.swift */,
+				181172F42C36BFA0009A90A2 /* ProfileViewScreen.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -212,6 +226,7 @@
 				18CBD6F42C341FF100A430D8 /* Double + Extension.swift */,
 				18CBD6EF2C341FC600A430D8 /* Font + Extension.swift */,
 				18CBD6F12C341FD900A430D8 /* UserMemory.swift */,
+				18D4A6032C36815B002BC13F /* Extension + View.swift */,
 				18CBD6EA2C341F1600A430D8 /* UIFont */,
 				18CBD6E72C341E7E00A430D8 /* Settings */,
 				18CBD6B02C341CFA00A430D8 /* Assets.xcassets */,
@@ -321,16 +336,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D4A6042C36815B002BC13F /* Extension + View.swift in Sources */,
 				18CBD6DD2C341E4C00A430D8 /* QRCodeView.swift in Sources */,
 				18CBD6D52C341E3600A430D8 /* ProfileView.swift in Sources */,
 				18CBD6C22C341D8600A430D8 /* OnboardingVC.swift in Sources */,
+				181172F52C36BFA1009A90A2 /* ProfileViewScreen.swift in Sources */,
 				18CBD6E92C341E8400A430D8 /* Settings.swift in Sources */,
 				18CBD6F02C341FC600A430D8 /* Font + Extension.swift in Sources */,
+				18D4A6002C367F65002BC13F /* OnboardingScreenViewModel.swift in Sources */,
 				18CBD6DB2C341E4900A430D8 /* QRCodeVC.swift in Sources */,
 				18CBD6F22C341FD900A430D8 /* UserMemory.swift in Sources */,
 				18CBD6C72C341DBF00A430D8 /* HomeVC.swift in Sources */,
 				18CBD6D32C341E3200A430D8 /* ProfileVC.swift in Sources */,
+				18D4A6022C367F6C002BC13F /* ProgressBarView.swift in Sources */,
 				18CBD6E12C341E5600A430D8 /* AboutUsView.swift in Sources */,
+				18D4A5FC2C367F43002BC13F /* OnboardingScreen.swift in Sources */,
 				18CBD6F52C341FF100A430D8 /* Double + Extension.swift in Sources */,
 				18CBD7012C34469E00A430D8 /* GradientView.swift in Sources */,
 				18CBD6E52C341E5F00A430D8 /* ContactsView.swift in Sources */,
@@ -490,6 +510,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tigerBar&Cafe/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs a camera so that the user can take profile pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires a camera so that the user can take a profile photo from the library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -520,6 +542,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tigerBar&Cafe/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs a camera so that the user can take profile pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires a camera so that the user can take a profile photo from the library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

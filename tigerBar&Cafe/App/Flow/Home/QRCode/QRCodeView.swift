@@ -11,7 +11,7 @@ class QRCodeView: UIView {
     private (set) var bgImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .bgOther
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         return imageView
     }()
 
@@ -83,8 +83,8 @@ class QRCodeView: UIView {
         }
         
         btnBack.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(48)
-            make.left.equalToSuperview().offset(16)
+            make.top.equalToSuperview().offset(48.autoSize)
+            make.left.equalToSuperview().offset(16.autoSize)
             make.size.equalTo(48)
         }
         
@@ -95,15 +95,15 @@ class QRCodeView: UIView {
         
         imgCenter.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(btnBack.snp.bottom).offset(56)
-            make.width.equalTo(300)
-            make.height.equalTo(222)
+            make.top.equalTo(btnBack.snp.bottom).offset(56.autoSize)
+            make.width.equalTo(300.autoSize)
+            make.height.equalTo(222.autoSize)
         }
         
         bonusCardQRConteinerView.snp.makeConstraints { make in
             make.top.equalTo(imgCenter.snp.bottom).offset(-8)
             make.centerX.equalToSuperview()
-            make.size.equalTo(300)
+            make.size.equalTo(300.autoSize)
         }
         
         qrCodeImageView.snp.makeConstraints { make in

@@ -132,7 +132,7 @@ class ContactsView: UIView, UITextFieldDelegate {
         return imageView
     }()
     
-    private lazy var emailTextField: UITextField = {
+    private(set) lazy var emailTextField: UITextField = {
         let textField = UITextField()
         let placeholderText = NSAttributedString(string: "You Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white.withAlphaComponent(0.5)])
         
@@ -207,7 +207,7 @@ class ContactsView: UIView, UITextFieldDelegate {
     
     private func setupUI() {
 
-        [bgImage, btnBack, titleLabel, scrollView, nameTextField, emailTextField, messageTextView] .forEach(addSubview(_:))
+        [bgImage, btnBack, titleLabel, scrollView, nameTextField, emailTextField, messageTextView, sendBtn] .forEach(addSubview(_:))
         scrollView.addSubview(imgCenter)
 
         scrollView.addSubview(btnFacebook)
@@ -222,7 +222,7 @@ class ContactsView: UIView, UITextFieldDelegate {
         imgContainer.addSubview(imgContainerEmail)
         imgContainer.addSubview(imgContainerMessage)
 
-        imgContainer.addSubview(sendBtn)
+//        imgContainer.addSubview(sendBtn)
         imgContainer.addSubview(imgPoint)
         imgContainer.addSubview(pointLabel)
     }
